@@ -1,7 +1,12 @@
 package com.driver;
 
 public class Main {
-  RWOnly ob1=new RWOnly();
-  try{ob1.name=12;}
-  catch{e.printStack();}
+  public static void main( String args[]){
+    RWOnly rw=new RWOnly();
+    //rw.name="Deepak";
+    // java: name has private access in com.driver.RWOnly
+    rw.setName("Deepak");
+    rw.getName();
+
+  }
 }
